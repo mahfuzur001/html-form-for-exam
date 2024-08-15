@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registation form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        /* background-image: url(4ba56bce00ec126c15e364230d1514ea.png);
+        background-repeat: no-repeat;
+        width: cover; */
+        background-color: rgb(112, 93, 168);
+        
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3%;
+      }
+      form {
+        /* border: 1px solid black; */
+        background-color: transparent;
+        color: aliceblue;
+        box-shadow: 0 0 15px;
+        width: max-content;
+        padding: 10px 50px;
+        border-radius: 20px;
+      }
+      input {
+        color: aliceblue;
+        background-color: #e7eec5;
+        padding: 5px;
+        border-radius: 15px;
+        /* width: 100%; */
+      }
+      .input-100{
+        width: 100%;
+      }
+      .input,option{
+        color: rgb(12, 13, 14);
+        background-color: #e7eec5;
+      }
+      input[type='submit']{
+        /* color: blue; */
+        background-color: blue;
+        padding: 10px 20px;
+        box-shadow: none;
+      }
+      input[type='submit']:hover{
+        background-color: rgb(112, 130, 231);
+        color: black;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.2s;
+      }
+      div {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <form action="">
+        <h2 style="text-align: center; color: aliceblue ;padding:20px;">Student Registation Form</h2>
+      <div>
+        <label for="name">Name:</label>
+        <input class="input-100"
+          type="text"
+          name="text"
+          value=""
+          id="name"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input class="input-100"
+          type="text"
+          name="text"
+          value=""
+          id="email"
+          placeholder="Enter your valid email"
+        />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input class="input-100"
+          type="password"
+          name="text"
+          value=""
+          id="password"
+          placeholder="Entervalid password"
+        />
+      </div>
+      <div style="display: flex; justify-content: space-around;">
+        <div>
+          <label>Your hobbies:</label><br />
+          <input type="checkbox" name="text" value="learning" />Drawing <br />
+          <input type="checkbox" name="text" value="Digital art"/>Digital art
+          <br />
+          <input type="checkbox" name="text" value="Playing" />Playing
+        </div>
+        <div>
+          <label for="">Your Departmant:</label><br />
+          <input type="radio" name="text" value="EEE" />EEE <br />
+          <input type="radio" name="text" value="CSE" />CSE<br />
+          <input type="radio" name="text" value="AIDT" />AIDT <br />
+          <!-- <input type="radio" name="text" value="BBA" />BBA -->
+        </div>
+        
+      </div>
+      <div >
+        <label for="">Your Country</label><br />
+        <select  class="input" name="" id="" required>
+            <option  value="">Bangldesh</option>
+            <option  value="">---select one---</option>
+          <option  value="">Pakistan</option>
+          <option  value="">Canada</option>
+          <option  value="">USA</option>
+          <option  value="">UK</option>
+        </select>
+      </div>
+      <div>
+        <label for="photo">Your photo</label><br>
+        <input class="input-100" class="" id="photo" type="file" />
+      </div>
+      <div>
+        <label for="color">Your favourite color</label>
+        <input id="color" type="color"/>
+      </div>
+      <div>
+        <label style="padding: 5px;"  for="color">Your Skill Range</label>
+        <input id="color" type="range" />
+      </div>
+      <div>
+        <input class="input-100" type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
